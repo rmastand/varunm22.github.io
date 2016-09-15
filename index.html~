@@ -23,43 +23,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <div class="container-fluid" id="Home">
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-header">
-    <a class="navbar-brand" href="#Home">Varun Mangalick</a>
-  </div>
-  <div>
-    <ul class="nav navbar-nav">
-      <li><a href="#About">About</a></li>
-      <li><a href="#Portfolio">Portfolio</a></li>
-      <li><a href="#Resume">Resume</a></li>
-    </ul>
-  </div>
-</nav>
-<div class="home">
-  <div class="large text-right"><p>Varun Mangalick</p></div>
-  <p id="subtitle">Computer Science Student and Web Developer</p>
-  <div class="row" id="home-btn">
+<div class="about">
+    <div class="row">
+    <div class="col-sm-4">
+      <img class="img-responsive" src="http://studyoflife.org/varun.jpg">
+    </div>
+    <div class="col-sm-8" id="about-text">
+	    
+ <div class="title"><h1>Varun Mangalick</h1></div>
+ <div class="row home-btn">
     <div class="col-xs-4"><a href="http://github.com/varunm22"><button class="btn btn-block btn-primary">Github</button></a></div>
     <div class="col-xs-4"><a href="http://www.linkedin.com/in/varunmangalick
 "><button class="btn btn-block btn-primary">Linkedin</button></a></div>
-    <div class="col-xs-4" id="About"><a href="http://freecodecamp.com/varunm22"><button class="btn btn-block btn-primary">freeCodeCamp</button></a></div>
-  </div>
-</div>
-  <div class="about">
-    <div class="row">
-    <div class="col-sm-4">
-      <img class="img-responsive round" src="http://studyoflife.org/varun.jpg">
-    </div>
-    <div class="col-sm-8" id="about-text">
-      <h1>About Me</h1>
-      <p>My name is Varun Mangalick, and I am a student at the Massachusetts Institute of Technology. I'm majoring in computer science and teaching myself web development. My academic interests include software engineering and computational biology. My non-academic interests include South-Asian dance, singing, and distance running.</p>
+    <div class="col-xs-4"><a href="https://www.dropbox.com/s/nkelhy7rdoss16l/Mangalick_Varun_Resume_Spring2016.pdf?raw=1"><button class="btn btn-block btn-primary">Resume</button></a></div>
+ </div>
+      <p>I am a student at the Massachusetts Institute of Technology, and I'm majoring in computer science and engineering. My academic interests include software engineering, data science, and computational biology. In my free time, I sing with <a href="http://resonance.mit.edu">MIT Resonance</a>!</p>
     </div>
   </div>
 </div>
   <div class="portfolio" id="Portfolio">
-    <h1 class="text-center">Portfolio</h1>
-    <p class="text-center">*Most recent first</p>
-    <h2 class="text-center">Favorites</h2>
+    <h1 class="text-center">Projects</h1>
     <div class="row">
       <div class="col-xs-4">
       <a href="http://s.codepen.io/varunm22/debug/yegmMb"><img class="thumbnail" src="https://www.dropbox.com/s/21o2hq7rqpozkw9/markdown-bg.PNG?raw=1">
@@ -88,92 +71,7 @@
         <p class="text-center"><b>Pomodoro Clock</b></p></a>
       </div>
     </div>
-    <h2 class="text-center">All</h2>
-    <div class="row" id="allProjects">
-      <div id = "react" class="col-xs-6 text-center" onclick="showThis('react')"><h3>React.js Projects <i class="fa fa-caret-down"></i></h3></div>
-      <div id = "front" class="col-xs-6 text-center" onclick="showThis('front')"><h3>Basic Front End Projects</h3></div>
-    </div>
-    <div id="projects">
-      <div id="reactProjects">
-        <div class="row">
-        <div class="col-xs-4">
-        <a href="http://s.codepen.io/varunm22/debug/yegmMb"><img class="thumbnail" src="https://www.dropbox.com/s/21o2hq7rqpozkw9/markdown-bg.PNG?raw=1">
-          <p class="text-center"><b>Markdown Editor</b></p></a>
-        </div>
-        </div>
-      </div>
-      <div id="frontProjects">
-        <div class="row">
-      <div class="col-xs-4">
-        <a href="http://s.codepen.io/varunm22/debug/mVOvOw"><img class="thumbnail" src="https://www.dropbox.com/s/pp2op7zp7z1b3j5/simon-bg.PNG?raw=1">
-          <p class="text-center"><b>Simon Game</b></p></a>
-      </div>
-      <div class="col-xs-4">
-        <a href="http://s.codepen.io/varunm22/debug/YwqpMb"><img class="thumbnail" src="https://www.dropbox.com/s/9ktyo3c10ntpe3y/tictactoe-bg.PNG?raw=1">
-          <p class="text-center"><b>Tic Tac Toe</b></p></a>
-      </div>
-      <div class="col-xs-4">
-        <a href="http://s.codepen.io/varunm22/debug/NxxPdJ"><img class="thumbnail" src="https://www.dropbox.com/s/cfs2kjbvon4qe4s/wiki-bg.PNG?raw=1">
-          <p class="text-center"><b>Wiki Viewer</b></p></a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-4">
-        <a href="http://s.codepen.io/varunm22/debug/pgjeag"><img class="thumbnail" src="https://www.dropbox.com/s/f89jat9dbv79ub1/news-bg.PNG?raw=1">
-          <p class="text-center"><b>Camper News Feed</b></p></a>
-      </div>
-      <div class="col-xs-4">
-      <a href="http://s.codepen.io/varunm22/debug/Nxqeox"><img class="thumbnail" src="https://www.dropbox.com/s/5gbz2v1v0j2kvup/twitch-bg.PNG?raw=1">
-        <p class="text-center"><b>Twitch TV Feed</b></p></a>
-      </div>
-      <div class="col-xs-4">
-      <a href="http://s.codepen.io/varunm22/debug/gPbEyQ"><img class="thumbnail" src="https://www.dropbox.com/s/keou4ymo6h4o1sy/weather-bg.PNG?raw=1">
-        <p class="text-center"><b>Local Weather App</b></p></a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-4">
-        <a href="http://s.codepen.io/varunm22/debug/GoKGeG"><img class="thumbnail" src="https://www.dropbox.com/s/kkwd49ucfufakjf/calculator-bg.PNG?raw=1">
-          <p class="text-center"><b>JS Calculator</b></p></a>
-      </div>
-      <div class="col-xs-4">
-      <a href="http://varunm22.github.io/pomodoro-clock"><img class="thumbnail" src="https://www.dropbox.com/s/nesequcymgnmojn/clock_bg.PNG?raw=1">
-        <p class="text-center"><b>Pomodoro Clock</b></p></a>
-      </div>
-      <div class="col-xs-4">
-      <a href="http://varunm22.github.io/random-quote-machine"><img class="thumbnail" src="https://www.dropbox.com/s/wv7nkvrw3jo9eii/quote-bg.PNG?raw=1">
-        <p class="text-center"><b>Random Quote Machine</b></p></a>
-      </div>
-    </div>
-      </div>
-    </div>
-  </div>
-  <div class="resume" id="Resume">
-    <div id="resumeList">
-      <h1 class="text-center">Resume</h1>
-      <a href="https://www.dropbox.com/s/nkelhy7rdoss16l/Mangalick_Varun_Resume_Spring2016.pdf?raw=1"><p class="text-center">Download PDF</p></a>
-      <h3>Education</h3>
-      <p><b>Massachusetts Institute of Technology</b></p> <p>Bachelors of Science in Computer Science and Engineering (Jan 2016 to Present)</p>
-      <h3>Experience</h3>
-      <p><b>Data Science Intern: </b>Nutonian</p>
-      <p>Built a predictive model for crime frequency dynamics and incorporated the model into an artificial intelligence application</p>
-      <p><b>Co-Founder: </b>Study of Life (studyoflife.org)</p>
-      <p> Created, designed and ran a blog, resource center, and tutoring service for students wanting help in biology classes or interested in participating in biology competitions such as the USA Biology Olympiad. (August 2014 to present)</p>
-      <p><b>Research Intern: </b>Biotechnology Institute, University of Minnesota</p>
-      <p>Completed computational experiments using R, python, and QIIME to analyze the effects of various external influences on the diversity and composition of the human microbiome under the mentorship of Dr. Dan Knights (July 2014 to August 2015)</p>
-      <h3>Honors and Awards</h3>
-      <p><b>International Biology Olympiad Gold Medalist</b> (July 2014 and July 2015)</p>
-      <p>Competed against 240 students from 60 countries; placed 7th (2015) and 19th (2014) internationally</p>
-      <p>Received top score (1st of 240 students) on theoretical portion of International Biology Olympiad exam (2015) internationally</p>
-      <p>Qualified for USA delegation through the USA Biology Olympiad by placing in the top 4 of 10,000 students nationally in theoretical and practical examinations </p>
-      <p><b>USA Department of Education Presidential Scholar of Academics</b> (June 2015)</p>
-      <p>Selected based on test scores, transcripts, extracurricular activities, honors, essays, etc </p>
-      <p>One boy and one girl are selected from each US state and territory along with 15 at-large recipients</p>
-      <h3>Skills</h3>
-      <p>Java, Python, R programming, Javascript, React.js, JQuery, HTML5+CSS3</p>
-    </div>
-  </div>
-  <div class="contact" id="Contact">
+      <div class="contact" id="Contact">
       <p>Contact me at vrm [at] mit.edu</p>
   </div>
 </div>
