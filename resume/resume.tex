@@ -1,0 +1,162 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2014 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,10pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{enumitem}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.90}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{7.4in}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} \textit{#2} & \textit{#3} \\
+\end{tabular*}\vspace{-6pt}}
+\newcommand{\resschool}[4]{
+\begin{tabular*}{7.4in}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{#2} \\
+        \textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+\newcommand{\resawards}[2]{
+\begin{tabular*}{7.4in}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{\large Varun R. Mangalick}  & 612.408.8108\\
+500 Memorial Dr. &  vrm@mit.edu \\
+Cambridge, MA 02139 & varunm22.github.io\\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\resheading{Education}
+\begin{description}
+\item
+  \resschool{Massachusetts Institute of Technology}{Cambridge, MA}{Bachelor of Science in Computer Science (GPA: 4.8)}{Jan. 2016 - May 2019 (est.)}
+  
+  \begin{itemize}[leftmargin=-1mm]
+    \resitem{Relevant Coursework: \textbf{6.046} (Advanced Algorithms), \textbf{6.005} (Software Construction with Java), \textbf{18.200} (Applied Discrete Mathematics), \textbf{6.047} (Computational Biology), \textbf{6.006} (Intro Algorithms)}
+  \end{itemize}
+\end{description}
+
+\resheading{Work Experience}
+\begin{description}
+\item
+  \ressubheading{UnifyID}{Software Engineering Intern}{January 2017 - February 2017}
+  \begin{itemize}[leftmargin=-1mm]
+    \resitem{Implemented a Node.js server responsible for credential sharing for accounts across multiple devices and users.}
+    \resitem{Started integration of credential sharing server into a chrome extension.}
+  \end{itemize}
+\item
+  \ressubheading{Nutonian}{Data Science Intern}{June 2016 - August 2016}
+  \begin{itemize}[leftmargin=-1mm]
+    \resitem{Built a predictive model for crime frequency dynamics and incorporated the model into an artificial intelligence application}
+    \resitem{Work was approved for use by data scientists with the US Air Force}
+  \end{itemize}
+
+
+
+\item
+  \ressubheading{Study of Life}{Co-founder}{August 2014 - Present}
+  \begin{itemize}[leftmargin=-1mm]
+    \resitem{Created, designed and ran a blog, resource center, and tutoring service for students wanting help in biology classes or interested in participating in biology competitions such as the USA Biology Olympiad}
+
+  \end{itemize}
+  
+\item
+  \ressubheading{Biotechnology Institute, University of Minnesota}{Research Intern}{June 2014 - August 2015}
+  \begin{itemize}[leftmargin=-1mm]
+    \resitem{Completed computational experiments using R, python, and QIIME to analyze the effects of various external influences on the diversity and composition of the human microbiome under the mentorship of Dr. Dan Knights}
+
+  \end{itemize}
+
+\end{description}
+
+\resheading{Skills}
+
+\begin{description}
+\item[Languages:]
+Java, Python, Javascript, R, HTML+CSS
+\item[Tools and Frameworks:]
+Node.js, Express, MongoDB, React.js, Pandas + NumPy, Docker + AWS
+\end{description}
+
+\resheading{Activities}
+
+\begin{description}
+
+\item[Code For Good (MIT):]
+Technical consulting for local nonprofits. Our team created a data visualization tool for Partners for Youth with Disabilities.
+
+\item
+
+\textbf{Hackathons}
+
+\vspace{-7pt}
+
+    \begin{itemize}[leftmargin=-1mm]
+    \resitem{HackMIT 2016: Created a tool with Python that converted a picture of written equations to LaTeX code}
+    \resitem{MakeMIT 2016: Created an automated micropipetting machine; ranked in the top 10 teams}
+  \end{itemize}
+
+
+
+\item[MIT Resonance]
+A cappella vocal performance
+\end{description}
+
+
+\resheading{Honors and Awards}
+
+\begin{description}
+\item
+  \resawards{USA Department of Education Presidential Scholar of Academics}{June 2015}
+  \begin{itemize}[leftmargin=-1mm]
+    \resitem{Honored by the US Secretary of Education and awarded a Presidential Medallion}
+  \end{itemize}
+
+\item
+  \resawards{International Biology Olympiad Gold Medalist}{July 2014, July 2015}
+  \begin{itemize}[leftmargin=-1mm]
+    \resitem{Competed against 240 students from 60 countries; placed $7^{th}$ (2015) and $19^{th}$ (2014) internationally}
+  \end{itemize}
+
+
+\end{description}
+
+\resheading{Additional Information}
+
+\begin{description}
+\item[Gap Semester:]
+Fractured spine in skydiving accident August 22, 2015; stayed home to recover until Jan 2016.
+\item[Hobbies:]
+Vocal performance, South Asian Fusion dance, Painting, Photography, Creative Writing (novel)
+\end{description}
+
+\end{document}
